@@ -6,9 +6,7 @@ This project develops a **Credit Risk Prediction Model** using a synthetic retai
 
 The trained model is deployed as an **interactive Streamlit web app**, allowing users to input customer data and receive real-time risk predictions.
 
-**Live Demo:** https://your-app-link.streamlit.app  
-**Repository:** https://github.com/yourusername/credit-risk-streamlit-app  
-
+**Live Demo:** https://hannanguyencreditriskmodel.streamlit.app
 ---
 
 ## Dataset
