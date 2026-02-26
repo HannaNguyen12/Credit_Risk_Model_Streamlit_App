@@ -1,0 +1,181 @@
+|--- customer_segment <= 0.50
+|   |--- nums_service <= 3.50
+|   |   |--- digital_behavior <= 0.50
+|   |   |   |--- days_since_last_active <= 280.50
+|   |   |   |   |--- balance <= 13983234.00
+|   |   |   |   |   |--- class: 0.0
+|   |   |   |   |--- balance >  13983234.00
+|   |   |   |   |   |--- monthly_ir <= 7500000.00
+|   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- monthly_ir >  7500000.00
+|   |   |   |   |   |   |--- balance <= 25036956.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- balance >  25036956.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |--- days_since_last_active >  280.50
+|   |   |   |   |--- class: 0.0
+|   |   |--- digital_behavior >  0.50
+|   |   |   |--- days_since_last_active <= 424.50
+|   |   |   |   |--- nums_service <= 1.50
+|   |   |   |   |   |--- monthly_ir <= 10500000.00
+|   |   |   |   |   |   |--- days_since_last_active <= 389.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- days_since_last_active >  389.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- monthly_ir >  10500000.00
+|   |   |   |   |   |   |--- days_since_last_active <= 383.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- days_since_last_active >  383.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- nums_service >  1.50
+|   |   |   |   |   |--- balance <= 12439275.00
+|   |   |   |   |   |   |--- monthly_ir <= 11500000.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- monthly_ir >  11500000.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- balance >  12439275.00
+|   |   |   |   |   |   |--- nums_service <= 2.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- nums_service >  2.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |--- days_since_last_active >  424.50
+|   |   |   |   |--- days_since_last_active <= 1789.50
+|   |   |   |   |   |--- days_since_last_active <= 426.50
+|   |   |   |   |   |   |--- nums_service <= 2.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- nums_service >  2.50
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- days_since_last_active >  426.50
+|   |   |   |   |   |   |--- monthly_ir <= 9500000.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- monthly_ir >  9500000.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- days_since_last_active >  1789.50
+|   |   |   |   |   |--- monthly_ir <= 12500000.00
+|   |   |   |   |   |   |--- balance <= 17217070.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- balance >  17217070.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- monthly_ir >  12500000.00
+|   |   |   |   |   |   |--- class: 0.0
+|   |--- nums_service >  3.50
+|   |   |--- days_since_last_active <= 333.50
+|   |   |   |--- class: 0.0
+|   |   |--- days_since_last_active >  333.50
+|   |   |   |--- balance <= 6701355.50
+|   |   |   |   |--- nums_service <= 4.50
+|   |   |   |   |   |--- days_since_last_active <= 1367.00
+|   |   |   |   |   |   |--- days_since_last_active <= 527.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- days_since_last_active >  527.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- days_since_last_active >  1367.00
+|   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |--- nums_service >  4.50
+|   |   |   |   |   |--- balance <= 5553803.00
+|   |   |   |   |   |   |--- monthly_ir <= 8500000.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- monthly_ir >  8500000.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- balance >  5553803.00
+|   |   |   |   |   |   |--- monthly_ir <= 8500000.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- monthly_ir >  8500000.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |--- balance >  6701355.50
+|   |   |   |   |--- monthly_ir <= 7500000.00
+|   |   |   |   |   |--- balance <= 7093034.00
+|   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- balance >  7093034.00
+|   |   |   |   |   |   |--- nums_service <= 4.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- nums_service >  4.50
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |--- monthly_ir >  7500000.00
+|   |   |   |   |   |--- nums_service <= 4.50
+|   |   |   |   |   |   |--- monthly_ir <= 8500000.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- monthly_ir >  8500000.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- nums_service >  4.50
+|   |   |   |   |   |   |--- days_since_last_active <= 1255.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- days_since_last_active >  1255.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|--- customer_segment >  0.50
+|   |--- customer_segment <= 1.50
+|   |   |--- days_since_last_active <= 330.50
+|   |   |   |--- active_member <= 0.50
+|   |   |   |   |--- days_since_last_active <= 329.50
+|   |   |   |   |   |--- balance <= 64692914.00
+|   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- balance >  64692914.00
+|   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |--- days_since_last_active >  329.50
+|   |   |   |   |   |--- monthly_ir <= 16500000.00
+|   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- monthly_ir >  16500000.00
+|   |   |   |   |   |   |--- class: 0.0
+|   |   |   |--- active_member >  0.50
+|   |   |   |   |--- class: 0.0
+|   |   |--- days_since_last_active >  330.50
+|   |   |   |--- monthly_ir <= 19500000.00
+|   |   |   |   |--- balance <= 19892240.00
+|   |   |   |   |   |--- days_since_last_active <= 1232.50
+|   |   |   |   |   |   |--- balance <= 7723745.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- balance >  7723745.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |--- days_since_last_active >  1232.50
+|   |   |   |   |   |   |--- nums_service <= 1.50
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- nums_service >  1.50
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |--- balance >  19892240.00
+|   |   |   |   |   |--- nums_service <= 2.50
+|   |   |   |   |   |   |--- monthly_ir <= 16500000.00
+|   |   |   |   |   |   |   |--- class: 1.0
+|   |   |   |   |   |   |--- monthly_ir >  16500000.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- nums_service >  2.50
+|   |   |   |   |   |   |--- monthly_ir <= 17500000.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- monthly_ir >  17500000.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |--- monthly_ir >  19500000.00
+|   |   |   |   |--- nums_service <= 2.50
+|   |   |   |   |   |--- days_since_last_active <= 1211.50
+|   |   |   |   |   |   |--- nums_service <= 1.50
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- nums_service >  1.50
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- days_since_last_active >  1211.50
+|   |   |   |   |   |   |--- balance <= 60284444.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- balance >  60284444.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |--- nums_service >  2.50
+|   |   |   |   |   |--- monthly_ir <= 25500000.00
+|   |   |   |   |   |   |--- monthly_ir <= 23500000.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- monthly_ir >  23500000.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |--- monthly_ir >  25500000.00
+|   |   |   |   |   |   |--- balance <= 25068080.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |   |   |   |   |   |--- balance >  25068080.00
+|   |   |   |   |   |   |   |--- class: 0.0
+|   |--- customer_segment >  1.50
+|   |   |--- days_since_last_active <= 601.50
+|   |   |   |--- class: 0.0
+|   |   |--- days_since_last_active >  601.50
+|   |   |   |--- balance <= 22380012.00
+|   |   |   |   |--- balance <= 21954966.00
+|   |   |   |   |   |--- class: 0.0
+|   |   |   |   |--- balance >  21954966.00
+|   |   |   |   |   |--- class: 1.0
+|   |   |   |--- balance >  22380012.00
+|   |   |   |   |--- nums_service <= 1.50
+|   |   |   |   |   |--- class: 0.0
+|   |   |   |   |--- nums_service >  1.50
+|   |   |   |   |   |--- class: 0.0

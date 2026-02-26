@@ -1,4 +1,4 @@
-# Credit Risk Prediction App (Vietnam Retail Banking)
+# Credit Risk Prediction App (Data from Vietnam Retail Banking)
 
 ## Overview
 
@@ -6,9 +6,11 @@ This project develops a **Credit Risk Prediction Model** using a synthetic retai
 
 The trained model is deployed as an **interactive Streamlit web app**, allowing users to input customer data and receive real-time risk predictions.
 
-**Live Demo:** https://your-app-link.streamlit.app  
-**Repository:** https://github.com/yourusername/credit-risk-streamlit-app  
+Unsupervised leaning is used to explore natural clusters of banking customers. Discovered 3 groups of customers with distinct traits
 
+Shap analysis and tree-rule visualizatoin are performed after random forest model traning to enhance intepretability
+
+**Live Demo:** https://hannanguyencreditriskmodel.streamlit.app
 ---
 
 ## Dataset
@@ -55,6 +57,42 @@ Final top 8 features used in the model and app:
 
 ### 3. Model Training and Selection
 
+***Unsupervised Learning***
+
+- Use Elbow Method and Silhouette Scores to determine best k
+- K-mean algorithms (k=3) combined with heatmap and cpa visualization
+- Result:
+   
+   ===== Cluster 0: The Elites" ====== 
+
+- Highest-value customers, but disengaged.
+
+- Have the highest balance, credit_sco, and monthly_ir but lowest active_member score, low engagement, and not using mobile app
+
+- <mark> The most high-value segment <mark>
+
+   ===== Cluster 1: The Loyal" ====== 
+
+- Highest active_member, engagement_score, loyalty_level, using mobile app, lowest days_since_last_active
+
+- Having low account balance and monthly_ir
+
+- <mark> The most stable segment <mark>
+
+   ===== Cluster 2: The High-risk" ====== 
+
+- Have the highest exit (churn) rate, risk_score, and risk_segment
+
+- They have the lowest balance, credit_sco, and monthly_ir
+
+- Younger or lower-income users, active on digital apps but are very likely to leave
+
+- <mark> The most fragile segment <mark>
+
+![My Chart](cluster_analysis.png)
+
+***Supervised Learning***
+
 Compared multiple tree-based models:
 
 - Random Forest  
@@ -75,9 +113,15 @@ Test set performance:
 - **Precision:** 23.68%  
 - **Recall:** 93.01%  
 
+![My Chart](rf_roc_curve.png)
+
 Recall was prioritized to minimize false negatives and ensure high-risk customers are detected.
 
 ---
+
+## Model Intepretation
+
+- check rf_interpretability folder
 
 ## Deployment
 
