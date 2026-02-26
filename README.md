@@ -125,6 +125,8 @@ Recall was prioritized to minimize false negatives and ensure high-risk customer
 
 ## Deployment
 
+![My Chart](credit_risk_app.png)
+
 The trained model was exported using joblib and embedded in an interactive web app using Streamlit with:
 
 - Risk probability score
